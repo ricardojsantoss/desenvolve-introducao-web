@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pesquisa de Satisfação</title>
+</head>
+<body>
+
+  <h1>Formulário de Pesquisa de Satisfação</h1>
+
+  <form  method="post" action="processar-pesquisa.html">
+    
+    <section>
+      <h2>Dados Pessoais</h2>
+
+        <p>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome">
+        </p>
+        <p>    
+            <label for="email">E-mail:</label>
+            <input type="email" id="email">
+        </p>
+        <p>    
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone">
+        </p>
+    </section>
+
+    <section>
+      <h2>Pesquisa</h2>
+
+      <p>
+            <label>Como você avalia o atendimento?</label>
+      </p>
+      <p>
+
+      </p>
+            <input type="radio" id="excelente" name="atendimento" value="Excelente" required>
+            <label for="excelente">Excelente</label>
+
+            <input type="radio" id="bom" name="atendimento" value="Bom">
+            <label for="bom">Bom</label>
+
+            <input type="radio" id="ruim" name="atendimento" value="Ruim">
+            <label for="ruim">Ruim</label>
+     </p>
+
+      <p>
+            <label>Você recomendaria nossos serviços?</label> 
+      </p>
+      <p>
+            <input type="radio" id="sim" name="recomendaria" value="Sim">
+            <label for="sim">Sim</label>
+
+            <input type="radio" id="nao" name="recomendaria" value="Não">
+            <label for="nao">Não</label>
+       </p>
+      <label for="frequencia">Com que frequência você utiliza nossos serviços?</label>
+      <select id="frequencia" name="frequencia">
+        <option value="">Selecione...</option>
+        <option value="Regularmente">Regularmente</option>
+        <option value="Ocasionalmente">Ocasionalmente</option>
+        <option value="Primeira vez">Primeira vez</option>
+      </select>
+    </section>
+
+    <label>
+      <input type="checkbox" name="compartilhar" value="sim">
+      Autorizo compartilhar minha resposta com terceiros
+    </label>
+
+    <br><br>
+    <button type="submit">Enviar</button>
+  </form>
+
+</body>
+</html>
