@@ -1,0 +1,34 @@
+/* Cor padrão dos links */
+a {
+    color: red;
+}
+
+/* Cor ao passar o mouse */
+a:hover {
+    color: lime; /* Não existe 'lemon' como nome de cor, a mais próxima é 'lemonchiffon' */
+}
+
+/* Todos os parágrafos com fonte Arial */
+p {
+    font-family: Arial;
+}
+
+/* Parágrafos imediatamente após um h1 ficam em negrito */
+h1 + p {
+    font-weight: bold;
+}
+
+/* Padrão da classe .destaque: fonte Arial */
+.destaque {
+    font-family: Arial;
+}
+
+/* Se for um parágrafo com classe .destaque: fica em negrito */
+p.destaque {
+    font-weight: bold;
+}
+
+/* Se for um <strong> com classe .destaque: fica vermelho */
+strong.destaque {
+    color: red;
+}
