@@ -1,0 +1,28 @@
+/*
+1. Com base no código CSS abaixo, calcule em pixels o tamanho da fonte dos elementos 
+'h1', '.principal' e '.secundario'. 
+*/
+
+html { font-size: 20px; }
+html h1 { font-size: 2rem; } /* 2 * 20 = 40px */
+h1 > .principal { font-size: 1.4em; } /* 1.4 * 40 = 56px */
+html .secundario { font-size: 1.4rem; } /* 1.4 * 20 = 28px */
+
+
+/*
+2. Dada a cor definida no formato RGB `rgb(219, 78, 68)`, calcule duas possíveis 
+variações, uma 15% mais clara, outra 15% mais escura. Coloque as cores lado-a-lado e 
+compare os resultados.
+*/
+
+.cor {
+    background: rgb(219, 78, 68);
+}
+
+.cor-clara {
+    background: rgb(252, 90, 78);
+}
+
+.cor-escura {
+    background: rgb(186, 66, 58);
+}
