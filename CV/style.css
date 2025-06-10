@@ -1,0 +1,113 @@
+/* Paleta de cores */
+:root {
+    --cor-principal: #0077b6;
+    --cor-secundaria: #90e0ef;
+    --cor-destaque: #caf0f8;
+    --cor-fundo-rodape: #023e8a;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fontes */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+h1, h2, h3 {
+    font-family: 'Segoe UI', sans-serif;
+    color: var(--cor-principal);
+}
+
+/* Navegação */
+nav {
+    background-color: var(--cor-principal);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Seções */
+section {
+    padding: 80px 20px 20px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+section img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 50%;
+}
+
+/* Containers de cada item */
+section div {
+    background-color: var(--cor-destaque);
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Habilidades */
+ul {
+    list-style: square;
+    padding-left: 20px;
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--cor-fundo-rodape);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding-bottom: 10px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section {
+        padding-top: 100px;
+    }
+}
